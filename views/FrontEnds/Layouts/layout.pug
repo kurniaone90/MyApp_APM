@@ -1,0 +1,41 @@
+doctype html
+html
+	head
+		title= title
+		// Global CSS Start
+		link(rel='stylesheet', href='/FrontEnds/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/FrontEnds/css/custom.css')
+		// Global CSS End
+		// Page CSS Start
+		link(rel='stylesheet', href='/FrontEnds/css/tabbular.css')
+		link(rel='stylesheet', href='/FrontEnds/css/jquery.circliful.css')
+		link(rel='stylesheet', href='/FrontEnds/css/jquery.circliful.css')
+		link(rel='stylesheet', href='/FrontEnds/vendors/owl-carousel/owl.carousel.css')
+		link(rel='stylesheet', href='/FrontEnds/vendors/owl-carousel/owl.theme.css')
+		block css_page
+		// Page CSS End
+	body
+		// Header Start
+		<header>
+		include mini_header.pug
+		include header.pug
+		</header>
+		block content	
+		include footer.pug
+		include mini_footer.pug
+		// Header End
+		// Global JS Start
+		script(src='/FrontEnds/js/jquery.min.js')
+		script(src='/FrontEnds/js/bootstrap.min.js')
+		script(src='/FrontEnds/js/style-switcher.js')
+		script(src='/FrontEnds/js/raphael.js')
+		script(src='/FrontEnds/js/livicons-1.4.min.js')
+		script(src='/FrontEnds/js/josh_frontend.js')
+		// Global JS End
+		// Page JS Start
+		script(src='/FrontEnds/js/jquery.circliful.js')
+		script(src='/FrontEnds/vendors/owl-carousel/owl.carousel.js')
+		script(src='/FrontEnds/js/carousel.js')
+		script(src='/FrontEnds/js/index.js')
+		block js_page
+		// Page JS End
